@@ -11,10 +11,16 @@ class User
     private $name;
     private $email;
 
+    //TODO implement validation
+
     public function __construct($usernameInput, $passwordInput, $nameInput, $emailInput){
         $this->setUsername($usernameInput);
-        $this->setPassword($);
+        $this->setPassword($passwordInput);
+        $this->setName($nameInput);
+        $this->setEmail($emailInput);
     }
+
+
 
     /**
      * @return mixed
